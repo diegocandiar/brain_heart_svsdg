@@ -19,7 +19,7 @@ function [S2B, P2B, B2S, B2P, tH2B, tB2H] = model_SVSDG(EEG_comp, IBI, SAI, PAI,
 % tB2H: time array of the coefficients from brain to heart
 
 % Author: Diego Candia-Rivera (diego.candia.r@ug.uchile.cl)
-% Please cite: XXXXX
+% Please cite: https://doi.org/10.1016/j.neuroimage.2022.119023
 
 
 [Nch,Nt] = size(EEG_comp);
