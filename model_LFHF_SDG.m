@@ -41,7 +41,7 @@ ibi_int = detrend(ibi_int);
 if strcmp(opt_freq, 'y')
     nfft =1024;
     order_burg = 30;
-    [Pxx,F] = pburg(ibi_int, order_burg, nfft, Fs);
+    [Pxx,F] = pburg(ibi_int, order_burg, nfft, Frr);
     ix_lf = find(F >= 0.04 & F<= 0.15);
     ix_hf = find(F >= 0.15 & F<= 0.4);
     F_lf = F(ix_lf);
